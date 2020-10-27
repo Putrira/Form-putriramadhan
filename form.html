@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <style type="text/css">
+    .container {
+        width: 450px;
+        margin: auto;
+        background-color: #0c413087;
+        color: white;
+    }
+     .tulisan{
+         text-align: center;
+         font-family: lato;
+         font-weight: bold;
+         padding-top: 50px;
+     }
+      table{
+          margin: auto;
+      }
+      .table td{
+          padding-bottom: 20px;
+      }
+      .input{
+          border-radius: 7px;
+      }
+      .submit{
+          padding: 5px 20px;
+          font-family: lato;
+          font-weight: bold;
+          border-radius: 5px;
+      }
+     
+    
+    </style>
+        
+</head>
+<body background="register.jpg" >
+    <div class="container">
+        <h1 class="tulisan">Form Pendaftaraan Mahasiswa</h1>
+        <form action="">
+            <table class="table">
+                <tr>
+                    <td><label for="name">No Pendaftaraan </label></td>
+                    <td>: <input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Prodi</label></td>
+                    <td>:
+                        <select name="pilih" id="select" class="input"> 
+                            <option value="">--Silakan Isi--</option>
+                            <option value="">Teknik Informatika</option>
+                            <option value="">Sistem Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="name">Nama Calon Mahasiswa</label> </td>
+                    <td>: <input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Jenis Kelamin</label> </td>
+                    <td>: 
+                        <input type="radio" value="Laki-laki" class="input">
+                        <label for="">Laki-laki</label>
+                        <input type="radio" value="Perempuan" class="input">
+                        <label for="">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="name">Tempat Lahir</label></td>
+                    <td>: <input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Tanggal Lahir</label></td>
+                    <td>: <input type="date" class="input"></td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama</label></td>
+                    <td>: 
+                        <select name="agama " id="agama" class="input">
+                            <option value="">--Silakan di Isi--</option>
+                            <option value="">Islam</option>
+                            <option value="">Kristen</option>
+                            <option value="">Katholik</option>
+                           
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="name">Alamat</label></td>
+                    <td>: <input type="textarea" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
